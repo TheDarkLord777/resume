@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light{
+    --white-dark:#fff;
+    --background:url(../src/assets/fon.jpg) center repeat;
+
+}
+.dark{
+    --white-dark: #111928;
+    --background:#fff;
+
+}
+#root{
+    overflow: hidden;
+
+}
