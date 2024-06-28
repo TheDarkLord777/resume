@@ -1,6 +1,5 @@
-import React from "react";
 
-export type setStates=React.Dispatch<string>
+export type setStates= (theme:string)=>void ;
 export interface MouseEffect{
 	x:number,
 	y:number,

@@ -21,7 +21,6 @@
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
       "@layout/*": ["layout/*"],
-      "@types/*": ["types/*"],
     },
     /* Linting */
     "strict": true,

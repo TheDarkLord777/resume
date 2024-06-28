@@ -1,10 +1,10 @@
 import {ThemeCircle, ThemeStyled} from "@components/Theme/Theme.styled.ts";
 import React from "react";
-import {setStates} from "@types/data.ts";
 import {Moon, Sun1} from "iconsax-react";
+import {setStates} from "../../types/data.ts";
 
 
-interface ThemeProps extends setStates {
+interface ThemeProps {
 	setTheme: setStates,
 	theme: string
 }

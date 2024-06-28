@@ -14,11 +14,12 @@ const Header: React.FC = () => {
 	const MouseLeaving = () => {
 		setIsHovered(false)
 	}
-	const MouseMoving = (event) => {
+	const MouseMoving = (event:React.MouseEvent) => {
 		setPosition({x: event.clientX, y: event.clientY})
 	}
 	useEffect(() => {
-		document.getElementById("root").className = theme
+		
+		document.getElementById("root")!.className = theme
 	}, [theme])
 	
 	return <HeaderStyled onMouseEnter={MouseEntering} onMouseMove={MouseMoving} onMouseLeave={MouseLeaving}>

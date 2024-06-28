@@ -7,7 +7,7 @@ const Layout: React.FC = () => {
 	const calculate = useRef(0);
 	const innerWidth = useRef(window.innerWidth);
 	
-	const Shaker = (event) => {
+	const Shaker = (event:React.MouseEvent) => {
 		calculate.current = event.clientX - (innerWidth.current / 2);
 		setPosition({x: calculate.current});
 	};

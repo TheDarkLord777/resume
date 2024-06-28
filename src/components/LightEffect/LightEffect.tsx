@@ -1,8 +1,10 @@
 import {LightEffectStyled} from "@components/LightEffect/LightEffect.styled.ts";
 import React from "react";
-import {MouseEffect} from "@types/data.ts";
+import {MouseEffect} from "../../types/data.ts";
 
-export const LightEffect:React.FC<MouseEffect>=(props)=>{
-	return <LightEffectStyled $left={props.x} $top={props.y} $isHovered={props.isHovered}></LightEffectStyled>
+interface LightEffect extends MouseEffect{
+}
+export const LightEffect:React.FC<LightEffect>=({x,y,isHovered})=>{
+	return <LightEffectStyled $left={x} $top={y} $isHovered={isHovered}></LightEffectStyled>
 }
 export default LightEffect

@@ -1,12 +1,17 @@
 import styled from "styled-components";
+interface LightEffectStyled{
+	$top:number,
+	$left:number,
+	$isHovered:boolean
+}
 
-export const LightEffectStyled = styled.div.attrs(props => ({
+export const LightEffectStyled = styled.div.attrs<LightEffectStyled>(({$top,$left,$isHovered}) => ({
 	style: {
-		top: `${props.$top}px`,
-		left: `${props.$left}px`,
-		opacity: props.$isHovered ? 1 : 0,
+		top: `${$top}px`,
+		left: `${$left}px`,
+		opacity: `${$isHovered ? 1 : 0}`,
 	},
-}))`
+}))<LightEffectStyled>`
     position: absolute;
     width: 150px;
     height: 150px;
