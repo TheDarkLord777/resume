@@ -30,9 +30,9 @@ export const HeaderLogo = styled.div<{ $theme: string }>`
     background-position: center;
     background-size: contain;
     ${props => props.$theme === "light" ? css`
-                background-image: url("../../../src/assets/logo_changed.png")`
+                background-image: url("/assets/logo_changed.png")`
             : css`
-                background-image: url("../../../src/assets/test.png");
+                background-image: url("/assets/test.png");
                 animation: ${rotateAnimation} 1s linear infinite;
       `}
 `
