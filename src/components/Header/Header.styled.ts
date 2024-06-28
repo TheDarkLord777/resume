@@ -1,4 +1,7 @@
 import styled, {css, keyframes} from "styled-components";
+import logo from "../../assets/logo_changed.png";
+import logorotate from "../../assets/test.png";
+
 
 
 
@@ -30,9 +33,9 @@ export const HeaderLogo = styled.div<{ $theme: string }>`
     background-position: center;
     background-size: contain;
     ${props => props.$theme === "light" ? css`
-                background-image: url("../src/assets/logo_changed.png")`
+                background-image: url(${logo})`
             : css`
-                background-image: url("../src/assets/test.png");
+                background-image: url(${logorotate});
                 animation: ${rotateAnimation} 1s linear infinite;
       `}
 `
